@@ -1,4 +1,142 @@
-## 1.3
+## 2.2.0 (2016.06.05)
+
+Bugfixes:
+  - Fix spelling mistakes in README file (@sebastinas, #116)
+  - Fix shell escaping to work with arguments which has space (@timangus, #124)
+
+
+## 2.1.5 (2016.02.16)
+
+Bugfixes:
+  - Stop filtering out `-m` options (@joshtriplett, #115)
+  - Updated man page bugs section (#114)
+
+
+## 2.1.4 (2016.02.14)
+
+Bugfixes:
+  - Make paths to sources and include files absolute. (@svenpanne, #111)
+  - Extend known issues section of documentation (#112, #108, #105, #102)
+
+
+## 2.1.3 (2016.01.13)
+
+Bugfixes:
+  - warnings are not filtered from output (@velkyel, #106)
+  - support universal binaries (32 and 64) on x86 OS X (@DeanoC, #101)
+
+
+## 2.1.2 (2015.10.01)
+
+Bugfixes:
+  - Fix escaping quotes for shell too. (@zauguin, #88)
+
+
+## 2.1.1 (2015.08.31)
+
+Bugfixes:
+  - Fix iterator next method usage (@drvink, #97)
+
+
+## 2.1.0 (2015.08.08)
+
+Features:
+  - Ignore preprocessor flags for dependency generation (@jonthn, #74)
+  - Exclude irrelevant files names in command (@wweic, #94)
+  - Support MetaWare toolkit (@twpedersen, #95)
+  - Use docker build for travis-ci
+
+Bugfixes:
+  - Get rid of cmake warnings on osx (@emlai, #90)
+  - Protect report generation in multithread build systems (@smoofra, #93)
+
+
+## 2.0.4 (2015-06-16)
+
+Bugfixes:
+
+  - Fix crash when make with -j option (@minhyuk, #87)
+
+
+## 2.0.3 (2015-04-04)
+
+Bugfixes:
+
+  - Fix passing of arguments to mkdtemp (@kljohann, #75)
+  - Empty output when compiler used to link. (@QuaziRandom, #80)
+  - Bad escape of strings in compilation database. (@jumapico, #81)
+
+
+## 2.0.2 (2015-02-08)
+
+Bugfixes:
+
+  - Address Sanitizer error fixed.
+  - Fix some typos in man page (@sebastinas, #72)
+
+
+## 2.0.1 (2015-01-23)
+
+Bugfixes:
+
+  - Double free problem fixed when descrutor called multiple times.
+
+
+## 2.0 (2015-01-20)
+
+Features:
+
+  - Rewrite command `bear` from C to Python.
+  - Simplified build process with a single module for `libear`.
+
+Bugfixes:
+
+  - Work with empty environment (#69, @YorkZ)
+  - Filter out redundant entries (#66, @HongxuChen)
+  - Append to existing compilation database (#63, @p0rnfl4k3s)
+
+## 1.4.4 (2015-01-09)
+
+Features:
+
+  - Improve escaping logic (#67, #68, @SpecLad)
+  - Reword README file to be more english (#64, @libnoon)
+
+
+## 1.4.3 (2014-07-11)
+
+Features:
+
+  - Automatically generate Debian package dependency list with cpack (#62, @bbannier)
+
+
+## 1.4.2 (2014-05-19)
+
+Features:
+
+  - cross compilers recognised by bear (@nolange)
+
+
+## 1.4.1 (2014-05-09)
+
+Bugfixes:
+
+  - fix output entries have c14n file path (#61, @nickhutchinson)
+  - fix error message on missing config file (#60, @viraptor)
+  - extend README file based on user feedbacks (#54, #55, #56, #59, @btorpey, @breser, @vguerra)
+
+
+## 1.4 (2014-01-12)
+
+Bugfixes:
+
+  - fix typo in the README.md (#48, @breser)
+  - fix typo in the man page (#49, @sebastinas)
+  - fix cmake file to honor given CFLAGS (#50, @sebastinas)
+  - fix execle causes segfault on 32 bit systems (#51, #52, @breser, @sebastinas)
+
+
+## 1.3 (2013-12-18)
 
 Features:
 
@@ -8,6 +146,11 @@ Features:
 Bugfixes:
 
   - fix process stops when ctrl-z pressed (#40, @bbannier)
+  - fix non filtered output option renamed from debug (#44, @mikemccracken)
+  - fix broken build on OS X (#46, @breser)
+  - fix documentation (@mlq)
+  - fix posix_spawn* call not implemented (#43, @agentsim, @apoluektov)
+
 
 ## 1.2 (2013-10-01)
 
